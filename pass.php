@@ -23,13 +23,13 @@ $password2 	= $_POST['password2'];
           ".id"     		=> $username,
           "password"	 	=> $password2,
 			));
-	echo "<script>window.location='http://wifi.sman1cepu.sch.id/sukses.html'</script>";
+	echo "<script>window.location='http://10.5.250.1/sukses.html'</script>";
 	} 
 	elseif(count($cekuser)==0){
-	echo "<script>window.location='http://wifi.sman1cepu.sch.id/usernotfound.html'</script>";
+	echo "<script>window.location='http://10.5.250.1/usernotfound.html'</script>";
 	}
 	else{
-    echo "<script>window.location='http://wifi.sman1cepu.sch.id/password.html'</script>";
+    echo "<script>window.location='http://10.5.250.1/password.html'</script>";
 		}
 	$API->disconnect();
 	} 
