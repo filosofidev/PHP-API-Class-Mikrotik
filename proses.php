@@ -19,7 +19,7 @@ $mac	  	= $_POST['mac'];
 			"?mac-address"     => $mac,
 			));
 	if(count($cekuser)>0 or count($cekmac)>0){
-		echo "<script>window.location='http://wifi.sman1cepu.sch.id/gagal.html'</script>";
+		echo "<script>window.location='http://10.5.250.1/gagal.html'</script>";
 	}else{
     $API->comm("/ip/hotspot/user/add", array(
 			"server"		=> "all",
@@ -31,7 +31,7 @@ $mac	  	= $_POST['mac'];
 			"limit-uptime"	=> "00:00:00",
 			"disabled"		=> "yes",
 			));
-    echo "<script>window.location='http://wifi.sman1cepu.sch.id/aktivasi.html'</script>";
+    echo "<script>window.location='http://10.5.250.1/aktivasi.html'</script>";
 		}
 		$API->disconnect();
 	} 
